@@ -1,0 +1,13 @@
+INHERIT: base.yml
+docs_dir: docs
+site_name: xenondevs blog
+
+theme:
+  features:
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+
+nav:
+  - Home: index.md
