@@ -16,7 +16,7 @@
     --md-code-hl-name-color: var(--md-code-fg-color);
     --md-code-hl-operator-color: #47ebb4;
     --md-code-hl-punctuation-color: #abb9cb;
-    --md-code-hl-comment-color: #abb9cb;
+    --md-code-hl-comment-color: #6d747c;
     --md-code-hl-generic-color: var(--md-default-fg-color--light);
     --md-code-hl-variable-color: #7eb6f6;
 }
@@ -97,4 +97,10 @@
 
 article:not(.md-post--excerpt) p {
     text-align: justify;
+}
+
+/*Inline code blocks are <code> elements outside of <div class="highlight">*/
+
+article:not(.md-post--excerpt) p > code {
+    display: inline-block;
 }
