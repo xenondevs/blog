@@ -1,5 +1,8 @@
+site_name: xenondevs blog
 site_url: https://blog.xenondevs.xyz/
-copyright: Copyright &copy; 2023 xenondevs
+copyright: Copyright &copy; 2025 xenondevs
+
+docs_dir: blog
 
 extra:
   social:
@@ -7,8 +10,6 @@ extra:
       link: https://github.com/xenondevs
     - icon: fontawesome/brands/discord
       link: https://discord.com/invite/EpVMXtXB2t
-    - icon: fontawesome/brands/patreon
-      link: https://patreon.com/xenondevs
 
 theme:
   name: material
@@ -17,6 +18,11 @@ theme:
     scheme: slate
   icon:
     repo: fontawesome/brands/github
+  features:
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -26,8 +32,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -49,4 +55,6 @@ extra_javascript:
   - assets/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://livejs.com/live.js
+
+nav:
+  - Home: index.md
